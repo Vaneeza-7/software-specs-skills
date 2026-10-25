@@ -8,7 +8,7 @@ Claude skills for speccing software and projects.
 |---|---|
 | [`diagrams`](plugins/software-specs/skills/diagrams/SKILL.md) | Draws architecture, data flow (DFD) and process flow diagrams in a consistent, spec-ready style. |
 
-### diagrams at a glance
+### Diagrams
 
 - **Architecture**: the deployed system only. Dashed provider zones, named service boxes, labelled connections.
 - **Data flow diagram**: one universal diagram with swimlanes split by system and arrows labelled with data.
