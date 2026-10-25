@@ -8,6 +8,9 @@
   },
   "homepage": "https://github.com/Vaneeza-7/software-specs-skills",
   "repository": "https://github.com/Vaneeza-7/software-specs-skills",
+  "documentationUrl": "https://github.com/Vaneeza-7/software-specs-skills#readme",
+  "supportUrl": "https://github.com/Vaneeza-7/software-specs-skills/issues",
+  "privacyPolicyUrl": "https://github.com/Vaneeza-7/software-specs-skills/blob/main/PRIVACY.md",
   "license": "MIT",
   "keywords": [
     "specs",
