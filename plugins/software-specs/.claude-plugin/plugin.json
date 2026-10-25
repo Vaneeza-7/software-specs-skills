@@ -1,8 +1,8 @@
 {
   "name": "software-specs",
   "displayName": "Software Specs",
-  "description": "Skills for speccing software and projects, starting with a diagrams skill for architecture, data flow and process flow diagrams.",
-  "version": "1.0.1",
+  "description": "Skills for speccing software and projects, including diagrams and technical proposals.",
+  "version": "1.1.0",
   "author": {
     "name": "Vaneeza-7"
   },
@@ -17,6 +17,9 @@
     "diagrams",
     "architecture",
     "data-flow",
-    "process-flow"
+    "process-flow",
+    "technical-proposal",
+    "implementation-plan",
+    "milestones"
   ]
 }

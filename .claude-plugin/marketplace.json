@@ -10,8 +10,8 @@
     {
       "name": "software-specs",
       "source": "./plugins/software-specs",
-      "description": "Skills for speccing software and projects, starting with a diagrams skill for architecture, data flow and process flow diagrams.",
-      "version": "1.0.1"
+      "description": "Skills for speccing software and projects, including diagrams and technical proposals.",
+      "version": "1.1.0"
     }
   ]
 }

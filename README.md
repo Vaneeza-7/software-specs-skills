@@ -7,6 +7,14 @@ Claude skills for speccing software and projects.
 | Skill | What it does |
 |---|---|
 | [`diagrams`](plugins/software-specs/skills/diagrams/SKILL.md) | Draws architecture, data flow (DFD) and process flow diagrams in a consistent, spec-ready style. |
+| [`technical-proposal`](plugins/software-specs/skills/technical-proposal/SKILL.md) | Writes technical proposals and implementation plans: modules, tech stack, architecture, milestone timeline with acceptance criteria, scope boundary, open questions and assumptions. |
+
+### Technical proposal
+
+- Asks first: internal or client version, and a per-day or per-week plan.
+- Settles scope in chat and writes only after sign-off.
+- Order: overview, modules, tech stack, requested diagrams, milestones at a glance, Week 1 blockers, milestone tables, final acceptance, scope boundary, open questions, assumptions.
+- Client version never shows buffer or person-days.
 
 ### Diagrams
 
@@ -28,23 +36,24 @@ Run these inside a Claude Code session:
 
 ### Claude chat (claude.ai, desktop and mobile apps)
 
-1. Download [`diagrams.zip`](https://github.com/Vaneeza-7/software-specs-skills/releases/latest/download/diagrams.zip) from the latest release.
-2. In Claude, open **Settings > Capabilities**, find **Skills**, and upload the zip.
-3. Turn the skill on. Claude uses it automatically when you ask for a diagram.
+1. Download the skills you want from the latest release: [`diagrams.zip`](https://github.com/Vaneeza-7/software-specs-skills/releases/latest/download/diagrams.zip), [`technical-proposal.zip`](https://github.com/Vaneeza-7/software-specs-skills/releases/latest/download/technical-proposal.zip).
+2. In Claude, open **Settings > Capabilities**, find **Skills**, and upload each zip.
+3. Turn the skills on. Claude uses them automatically when your request matches.
 
 ### Claude API / Agent SDK
 
-Copy `plugins/software-specs/skills/diagrams` into your project's `.claude/skills/` directory, or upload it through the Skills API.
+Copy the skill folders from `plugins/software-specs/skills/` into your project's `.claude/skills/` directory, or upload them through the Skills API.
 
 ## Usage
 
-Ask Claude for a diagram while speccing, for example:
+Ask Claude while speccing, for example:
 
 - "Draw the architecture diagram for this system."
 - "Make a data flow diagram covering all flows."
 - "Create a process flow for how a deal gets analysed."
+- "Write a client technical proposal for this build."
 
-The skill picks the right type, applies its conventions, and checks the result before delivering.
+Claude picks the matching skill, applies its conventions, and checks the result before delivering.
 
 ## Repository layout
 
@@ -53,6 +62,7 @@ The skill picks the right type, applies its conventions, and checks the result b
 plugins/software-specs/
   .claude-plugin/plugin.json             # plugin manifest
   skills/diagrams/SKILL.md               # the diagrams skill
+  skills/technical-proposal/SKILL.md     # the technical proposal skill
   skills/<next-skill>/SKILL.md           # future skills go alongside
 LICENSE                                  # MIT
 ```
