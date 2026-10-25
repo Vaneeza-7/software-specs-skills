@@ -30,7 +30,7 @@ When revising, compare line by line against the exact version the user provides,
 
 ## Document structure
 
-1. **Title**, with a subtitle such as "N-Week Implementation Plan" or "N-Day Implementation Plan". Use relative weeks or days, never calendar dates, because start dates move.
+1. **Title**: "[System Name] Technical Proposal", followed by a "Date:" line with the date the document is written. Inside the plan itself, use relative weeks or days, never calendar dates, because start dates move.
 2. **Overview**: a short paragraph, not bullets, stating what is being built and the outcome.
 3. **Modules**: a table of Module | What it does. State plainly what each module does, in one line.
 4. **Tech stack**: a table of Layer | Technology. Name one concrete technology per layer, with no "or" alternatives.
@@ -93,9 +93,10 @@ Both versions have the same scope, modules, milestones and acceptance criteria.
 ## Check before delivering
 
 - Were the audience and granularity confirmed, and was the content signed off in chat?
+- Is the title "[System Name] Technical Proposal" with a Date line?
 - Are the sections in order, with modules, stack and diagrams before the timeline?
 - Does each milestone have a table with numbered implementation steps and acceptance criteria, followed by a milestone block?
 - Are acceptance criteria, exclusions and assumptions each stated once?
 - Do open questions contain only pending or blocking items?
-- Client version: no buffer, no person-days, no calendar dates?
+- Client version: no buffer, no person-days, no calendar dates in the timeline?
 - Revision: is every change from the previous version justified?
