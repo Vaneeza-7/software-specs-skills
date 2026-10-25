@@ -1,0 +1,17 @@
+{
+  "name": "software-specs-skills",
+  "owner": {
+    "name": "Vaneeza-7"
+  },
+  "metadata": {
+    "description": "Claude skills for speccing software and projects."
+  },
+  "plugins": [
+    {
+      "name": "software-specs",
+      "source": "./plugins/software-specs",
+      "description": "Skills for speccing software and projects, starting with a diagrams skill for architecture, data flow and process flow diagrams.",
+      "version": "1.0.0"
+    }
+  ]
+}

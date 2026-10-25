@@ -1,0 +1,57 @@
+# software-specs-skills
+
+Claude skills for speccing software and projects.
+
+## Skills
+
+| Skill | What it does |
+|---|---|
+| [`diagrams`](plugins/software-specs/skills/diagrams/SKILL.md) | Draws architecture, data flow (DFD) and process flow diagrams in a consistent, spec-ready style. |
+
+### diagrams at a glance
+
+- **Architecture**: the deployed system only. Dashed provider zones, named service boxes, labelled connections.
+- **Data flow diagram**: one universal diagram with swimlanes split by system and arrows labelled with data.
+- **Process flow**: end to end with decision diamonds, no swimlanes, person icons wherever someone interacts.
+- **Everywhere**: person icons for people, DB icons for data stores, labelled arrows, one concrete choice per box, one accent colour.
+
+## Install
+
+### Claude Code
+
+```
+/plugin marketplace add Vaneeza-7/software-specs-skills
+/plugin install software-specs@software-specs-skills
+```
+
+### Claude.ai and the Claude desktop app
+
+1. Download or zip the [`plugins/software-specs/skills/diagrams`](plugins/software-specs/skills/diagrams) folder.
+2. In Claude's settings, find **Skills** and upload the zip.
+
+### Claude API / Agent SDK
+
+Copy `plugins/software-specs/skills/diagrams` into your project's `.claude/skills/` directory, or upload it through the Skills API.
+
+## Usage
+
+Ask Claude for a diagram while speccing, for example:
+
+- "Draw the architecture diagram for this system."
+- "Make a data flow diagram covering all flows."
+- "Create a process flow for how a deal gets analysed."
+
+The skill picks the right type, applies its conventions, and checks the result before delivering.
+
+## Repository layout
+
+```
+.claude-plugin/marketplace.json          # marketplace entry for Claude Code
+plugins/software-specs/
+  .claude-plugin/plugin.json             # plugin manifest
+  skills/diagrams/SKILL.md               # the diagrams skill
+```
+
+## Contributing
+
+Add a new skill as `plugins/software-specs/skills/<skill-name>/SKILL.md` with `name` and `description` frontmatter, and list it in the table above.
