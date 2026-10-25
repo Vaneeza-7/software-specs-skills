@@ -1,9 +1,19 @@
 {
   "name": "software-specs",
+  "displayName": "Software Specs",
   "description": "Skills for speccing software and projects, starting with a diagrams skill for architecture, data flow and process flow diagrams.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Vaneeza-7"
   },
-  "repository": "https://github.com/Vaneeza-7/software-specs-skills"
+  "homepage": "https://github.com/Vaneeza-7/software-specs-skills",
+  "repository": "https://github.com/Vaneeza-7/software-specs-skills",
+  "license": "MIT",
+  "keywords": [
+    "specs",
+    "diagrams",
+    "architecture",
+    "data-flow",
+    "process-flow"
+  ]
 }

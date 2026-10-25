@@ -19,15 +19,18 @@ Claude skills for speccing software and projects.
 
 ### Claude Code
 
+Run these inside a Claude Code session:
+
 ```
 /plugin marketplace add Vaneeza-7/software-specs-skills
 /plugin install software-specs@software-specs-skills
 ```
 
-### Claude.ai and the Claude desktop app
+### Claude chat (claude.ai, desktop and mobile apps)
 
-1. Download or zip the [`plugins/software-specs/skills/diagrams`](plugins/software-specs/skills/diagrams) folder.
-2. In Claude's settings, find **Skills** and upload the zip.
+1. Download [`diagrams.zip`](https://github.com/Vaneeza-7/software-specs-skills/releases/latest/download/diagrams.zip) from the latest release.
+2. In Claude, open **Settings > Capabilities**, find **Skills**, and upload the zip.
+3. Turn the skill on. Claude uses it automatically when you ask for a diagram.
 
 ### Claude API / Agent SDK
 
@@ -56,7 +59,7 @@ LICENSE                                  # MIT
 
 ## Contributing
 
-All skills (diagrams, docs and more) live in the single `software-specs` plugin, so one install gets everything. Add a new skill as `plugins/software-specs/skills/<skill-name>/SKILL.md` with `name` and `description` frontmatter, and list it in the table above.
+All skills (diagrams, docs and more) live in the single `software-specs` plugin, so one install gets everything. Add a new skill as `plugins/software-specs/skills/<skill-name>/SKILL.md` with `name` and `description` frontmatter, and list it in the table above. Bump `version` in `plugin.json` and `marketplace.json`, then publish a GitHub release with a zip of each skill folder so Claude chat users can download it.
 
 ## License
 
