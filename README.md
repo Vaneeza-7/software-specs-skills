@@ -50,8 +50,14 @@ The skill picks the right type, applies its conventions, and checks the result b
 plugins/software-specs/
   .claude-plugin/plugin.json             # plugin manifest
   skills/diagrams/SKILL.md               # the diagrams skill
+  skills/<next-skill>/SKILL.md           # future skills go alongside
+LICENSE                                  # MIT
 ```
 
 ## Contributing
 
-Add a new skill as `plugins/software-specs/skills/<skill-name>/SKILL.md` with `name` and `description` frontmatter, and list it in the table above.
+All skills (diagrams, docs and more) live in the single `software-specs` plugin, so one install gets everything. Add a new skill as `plugins/software-specs/skills/<skill-name>/SKILL.md` with `name` and `description` frontmatter, and list it in the table above.
+
+## License
+
+[MIT](LICENSE)
